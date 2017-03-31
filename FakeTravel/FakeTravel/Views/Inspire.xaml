@@ -1,0 +1,57 @@
+﻿<Page
+    x:Class="FakeTravel.Views.Inspire"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FakeTravel.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Button Name="BackButton"
+                    Grid.Row="0"
+                    Content="BACK"
+                    VerticalAlignment="Top"
+                    Margin="20,20,0,0"
+                    Background="Blue"
+                    Foreground="Yellow"
+                    Click="BackButton_Click"/>
+        <Button Name="PurchaseButton"
+                    Grid.Row="0"
+                    Content="ORDER"
+                    VerticalAlignment="Top"
+                    Margin="120,20,0,0"
+                    Background="Brown"
+                    Foreground="White"
+                    Click="PurchaseButton_Click"/>
+        <Button Name="VideoButton"
+                Grid.Row="1"
+                Content="VIDEO"
+                VerticalAlignment="Top"
+                Margin="10"
+                Background="Blue"
+                Foreground="Yellow"
+                FontSize="40"
+                HorizontalAlignment="Stretch"
+                Height="250"
+                Click="VideoButton_Click"/>
+        <Button Name="CanvasButton"
+                Grid.Row="2"
+                Content="SKETCHES"
+                VerticalAlignment="Top"
+                Margin="10"
+                Background="Green"
+                Foreground="Yellow"
+                FontSize="40"
+                HorizontalAlignment="Stretch"
+                Height="250"
+                Click="CanvasButton_Click"/>
+
+    </Grid>
+</Page>

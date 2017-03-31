@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="FakeTravel.Views.Video"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FakeTravel.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:ConnectionId='1' Name="CanvasButton"
+                Content="SKETCHES"
+                VerticalAlignment="Top"
+                Margin="20,20,0,0"
+                Background="Blue"
+                Foreground="Yellow"
+                                          />
+        <Button x:ConnectionId='2' Name="BackButton" 
+                    Content="BACK"
+                    VerticalAlignment="Top"
+                    Margin="120,20,0,0"
+                    Background="Blue"
+                    Foreground="Yellow"
+                                            />
+        <Button x:ConnectionId='3' Name="PurchaseButton" 
+                    Content="ORDER"
+                    VerticalAlignment="Top"
+                    Margin="200,20,0,0"
+                    Background="Brown"
+                    Foreground="White"
+                                                />
+        <RelativePanel VerticalAlignment="Center" Margin="20,0,0,0">
+            <TextBlock x:ConnectionId='9' Name="MediaInstruction" HorizontalAlignment="Center" FontSize="22" TextWrapping="Wrap" Text="Use below links to download and save videos to your desktop. Then play these."/>
+            <TextBlock x:ConnectionId='10' Name="Link1" HorizontalAlignment="Center" RelativePanel.Below="MediaInstruction" FontSize="18" TextWrapping="Wrap" Text="Euro Rail : https://youtu.be/vjnaknNly8c"/>
+            <TextBlock x:ConnectionId='11' Name="Link2" HorizontalAlignment="Center" RelativePanel.Below="Link1" FontSize="18" TextWrapping="Wrap" Text="Turkey : https://youtu.be/LFmuDFLVRsQ"/>
+        </RelativePanel>
+       
+        <MediaElement x:ConnectionId='4' x:Name="media" HorizontalAlignment="Stretch" Margin="10,72,0,0" VerticalAlignment="Top"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="Aqua">
+            <AppBarButton x:ConnectionId='5' Icon="OpenFile" Name="openFile" Label="Open File"                       />
+            <AppBarButton x:ConnectionId='6' Icon="Play" Name="play" Label="Play"                   />
+            <AppBarButton x:ConnectionId='7' Icon="Pause" Name="pause" Label="Pause"                    />
+            <AppBarButton x:ConnectionId='8' Icon="Stop" Name="stop" Label="Stop"                   />
+            <!--<AppBarButton Icon="Back" Name="back" Label="Back" Click="back_Click"/>
+            <AppBarButton Icon="Forward" Name="forward" Label="Forward" Click="forward_Click"/>
+            <AppBarButton Icon="Mute" Name="mute" Label="Mute" Click="mute_Click"/>
+            <AppBarButton Icon="Volume" Name="volumePlus" Label="Vol +" Click="volumePlus_Click"/>
+            <AppBarButton Icon="Volume" Name="volumeMinus" Label="Vol -" Click="volumeMinus_Click"/>-->
+        </StackPanel>
+
+    </Grid>
+</Page>
+
